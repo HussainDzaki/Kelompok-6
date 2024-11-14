@@ -35,21 +35,21 @@ keluaran = []
 if kata_masukan_suara[0] == "microwave": 
     for i in range(len(kata_masukan_suara)) :
         if kata_masukan_suara[i] == "daging" :
-            keluaran.append("Food M")
+            keluaran[0] = "Food M"
         elif kata_masukan_suara[i] == "sayuran" :
-            keluaran.append("Food v")
+            keluaran[0] = "Food V"
         elif kata_masukan_suara[i] == "pasta" :
-            keluaran.append("Food P")
+            keluaran[0] = "Food P"
         elif kata_masukan_suara[i] == "beras":
-            keluaran.append("Food R")
+            keluaran[0] = "Food R"
         elif kata_masukan_suara[i] == "susu":
-            keluaran.append("Drink M")    
+            keluaran[0] = "Drink M"  
         elif kata_masukan_suara[i] == "air":
-            keluaran.append("Drink A")
+            keluaran[0] = "Drink A"
         elif kata_masukan_suara[i] == "kopi":
-            keluaran.append("Drink C")
+            keluaran[0] = "Drink C"
         elif kata_masukan_suara[i] == "sup":
-            keluaran.append("Drink S")
+            keluaran[0] = "Drink S"
         elif kata_masukan_suara [i] == "menit":
             waktu_menit = kata_masukan_suara[i-1]
         elif kata_masukan_suara [i] == "detik":
@@ -60,6 +60,8 @@ if kata_masukan_suara[0] == "microwave":
             waktu_menit = 15
         elif kata_masukan_suara[i] == "preheat":
             waktu_menit == 2
+else :
+        print('Ucapkan kata kunci "microwave" untuk memberikan perintah suara.")
             
             
 for i in keluaran :
